@@ -1,7 +1,11 @@
+*{
+  user-select: none;
+}
 #horario{
   position: absolute;
   cursor: pointer;
   left: 85vw;
+  user-select: none;
 }
 #render{
   margin-top: 40px;
