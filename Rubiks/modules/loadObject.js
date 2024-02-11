@@ -60,9 +60,6 @@ loader.load(
     }
 )
 
-
-
-
 scene.background = skyTexture
 
 ground.rotation.x = -Math.PI / 2
@@ -86,11 +83,12 @@ ground.receiveShadow = true
 cube1.castShadow = true
 ambientLight1.position.set(20, 10, 5)
 ambientLight1.castShadow = true
-scene.add(ambientLight1, cube1, ambientLight2)
+scene.add(ambientLight1, ambientLight2)
 
 function render() {
     requestAnimationFrame(render)
     renderer.render(scene, camera)
 }
+
 render()
 

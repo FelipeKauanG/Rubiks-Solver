@@ -1,17 +1,14 @@
-*{
-  padding: 0px;
-  margin: 0px;
-}
-body{
+#horario{
   position: absolute;
-  left: 50%;
+  cursor: pointer;
+  left: 85vw;
+}
+#render{
+  margin-top: 40px;
+  position: relative;
   transform: translate(-50%);
-}
-#info{
-  position: absolute;
-  top: 10px;
-  width: 100%;
-  text-align: center;
-  z-index: 100;
-  display: block;
+  left: 50%;
+  width: 360px;
+  height: 360px;
+  border-radius: 10px;
 }
