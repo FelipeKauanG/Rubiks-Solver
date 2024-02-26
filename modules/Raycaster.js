@@ -1,6 +1,8 @@
 // Importar módulos
-import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+
+import * as THREE from "https://unpkg.com/three@0.161.0/build/three.module.js";
+
+import { OrbitControls } from "https://unpkg.com/three@0.161.0/examples/jsm/controls/OrbitControls.js";
 
 // DOM
 var canvas = document.getElementById("render")
@@ -10,7 +12,7 @@ const scene = new THREE.Scene()
 const renderer = new THREE.WebGLRenderer({antialias: true})
 renderer.setSize(canvas.offsetWidth, canvas.offsetHeight)
 //document.body.appendChild(renderer.domElement)
-console.log(canvas.offsetHeight, canvas.off)
+console.log(canvas.offsetHeight, canvas.offsetWidth)
 canvas.appendChild(renderer.domElement)
 renderer.setPixelRatio(window.devicePixelRatio)
 

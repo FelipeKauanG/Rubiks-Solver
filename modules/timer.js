@@ -14,6 +14,8 @@ timer.addEventListener("mousedown", function(){
     },500)
 })
 
+
+
 var ligado = 0
 var Amil = 0
 var Bmil = 0
@@ -25,9 +27,11 @@ var Ahora = 0
 var Bhora = 0
 
 
+
 function comecar(){
     requestAnimationFrame(comecar)
     Amil += 1
+
 
     
     if(Amil > 9){
@@ -59,6 +63,8 @@ function comecar(){
         Bhora += 1
     }
 
+    
+
     if(Ahora >= 1 || Bhora >= 1){
         stopwatch.innerHTML = `${Bhora}${Ahora}:${Bmin}${Amin}:${Bsec}${Asec}:${Bmil}${Amil}`
     }else if(Amin >= 1 || Bmin >= 1){
@@ -74,5 +80,6 @@ timer.addEventListener("mouseup", function(){
     timer.style.backgroundImage = "url(WCA/TimerOff.png)"
     clearInterval(timerInterval)
     comecar()
+    
+    
 })
-
